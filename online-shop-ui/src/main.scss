@@ -1,0 +1,94 @@
+.user-image {
+  object-fit: cover;
+  background-size: cover;
+}
+
+.my-profile-image-container {
+  margin-top: 5%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-profile-information-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.my-profile-image-information-container {
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.my-profile-user-information-container {
+  margin-top: 5%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 45%;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-product-card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+body {
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f2ec;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+}
+
+.form-switch-button {
+  background-color: #f2c9b2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #e0b29a;
+  }
+}
+
+#dont-have-account,
+#already-have-account {
+  margin-top: 10px;
+  text-align: center;
+  display: block;
+  color: #777;
+}
