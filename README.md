@@ -48,15 +48,15 @@ Frontend
 - Node.js 21+
 - Maven
 - MySQL Database
-
+---
 
 ## 🛠️ Setup Instructions
 1. Clone repository
   - `git clone https://github.com/doandinhhao/online-shop`
 2. Run the Spring server application:
-  - Execute the mvn clean install command in the online-shop\online-shop-server directory.
-  - Modify the online-shop-server\src\main\resources\application.properties file.
-      "server.port=8081
+  -  Execute the `mvn clean install` command in the `online-shop\online-shop-server` directory.  
+- Modify the `online-shop-server\src\main\resources\application.properties` file:
+      ```server.port=8081
 
       # Database properties
       spring.jpa.hibernate.ddl-auto=create
@@ -77,22 +77,22 @@ Frontend
       algolia.usage=false
       algolia.app.id=YOUR_APP_ID
       algolia.api.key=YOUR_API_KEY
-      algolia.index.name=YOUR_INDEX_NAME"
-  - Execute the mvn spring-boot:run command in the online-shop\online-shop-server directory.
+      algolia.index.name=YOUR_INDEX_NAME
+  - Execute the `mvn spring-boot:run` command in the `online-shop\online-shop-server` directory.
 
 3. Run the React client application:
-   - Execute the npm install command in the online-shop\online-shop-ui directory.
-   - Modify the online-shop-ui\src\env-config.ts file.
+   - Execute the `npm install` command in the `online-shop\online-shop-ui` directory.
+   - Modify the `online-shop-ui\src\env-config.ts` file.
      
-       "export const API_BASE_URL = process.env.API_BASE_URL || 'http://localhost:8080';
+       ```export const API_BASE_URL = process.env.API_BASE_URL || 'http://localhost:8080';
         export const JWT_SECRET = process.env.JWT_SECRET || 'YOUR_JWT_SECRET';
         export const ALGOLIA_APP_ID = process.env.ALGOLIA_APP_ID || 'YOUR_APP_ID';
         export const ALGOLIA_API_KEY = process.env.ALGOLIA_API_KEY || 'YOUR_API_KEY';
         export const ALGOLIA_INDEX_NAME = process.env.ALGOLIA_INDEX_NAME || 'YOUR_INDEX_NAME';
         // Change it to "true" if Algolia search is enabled.
-        export const ALGOLIA_USAGE = "false";"
-  -  Execute the npm start command in the online-shop\online-shop-ui directory.
-NOTE: If you don't want to use the Algolia search and therefore to not display the search page, you don't have to define any Algolia properties.
+        export const ALGOLIA_USAGE = "false";
+  -  Execute the `npm start` command in the online-shop\online-shop-ui directory.
+## NOTE: If you don't want to use the Algolia search and therefore to not display the search page, you don't have to define any Algolia properties.
      
 
 
